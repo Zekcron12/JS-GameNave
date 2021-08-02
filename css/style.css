@@ -1,0 +1,80 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  /* variables */
+  /* sb: sombra  // cp: cuerpo // ep: elementos del cuerpo */
+}
+body { 
+	margin:10px; 
+	/*background-image: url("../img/wall.jpg"); */
+	/*background-color: #191919;*/
+	/*background-image: url("../img/fondo2.svg");*/
+	background: rgb(53,94,107);
+	background: linear-gradient(90deg, rgba(53,94,107,1) 0%, rgba(58,116,124,1) 50%, rgba(0,45,54,1) 100%);
+}
+
+.container {
+	display: flex;
+  flex-direction: column;
+  width: 600px;
+  margin:0 auto;
+}
+
+.barra {
+  background-color:#000000;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  line-height: 30px;
+  height: 30px; 
+  width: 600px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: -5px -5px 10px -4px rgba(255, 255, 255, 0.05),
+               5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+.container-control {
+	display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#my_canvas{ 
+  background:#000000; 
+  border:#000 1px solid;
+  border-radius: 15px;
+  margin-top: 20px;
+  box-shadow: -5px -5px 10px -4px rgba(255, 255, 255, 0.05),
+               5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+.boton{
+	width: 80px;
+	height: 80px;
+  color: #23FF00;
+  font-size: 25px;
+  background-color: #000000;
+  cursor: pointer;
+  border-radius: 50%;
+  margin-top: 10px;
+  padding: 10px 15px 10px 15px;
+  border: none;
+  background: #131319;
+  box-shadow: -7px -7px 10px 0px rgba(255, 255, 255, 0.05),
+        -4px -4px 5px 0px rgba(255, 255, 255, 0.05),
+        7px 7px 10px 0px rgba(0, 0, 0, 0.5),
+        4px 4px 5px 0px rgba(0, 0, 0, 0.5),
+        inset 0px 0px 0px 0px rgba(255, 255, 255, 0.05),
+        inset 0px 0px 0px 0px rgba(255, 255, 255, 0.05),
+        inset 0px 0px 0px 0px rgba(255, 255, 255, 0.05),
+        inset 0px 0px 0px 0px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+  outline: 0 !important;
+}
+.boton:hover{
+	color: #000;
+	background-color: #23FF00;
+	opacity: 0.7;
+	transform: scale(0.9);
+}
