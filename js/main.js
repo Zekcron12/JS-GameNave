@@ -344,7 +344,7 @@ function initCanvas(){
 
 	/* -------------------- Logica de los botones de pantalla  -------------------- */
   // boton izquierda
-  left_btn.addEventListener('mousedown', function(event) {
+  left_btn.addEventListener('mousedown touchstart', function(event) {
     launcher.direccion = 'left';
   });
 	left_btn.addEventListener('mouseup', function(event) {
